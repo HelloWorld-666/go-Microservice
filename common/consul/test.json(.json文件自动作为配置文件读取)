@@ -1,0 +1,17 @@
+{
+    "service":{
+        "name":"test01",
+        "tags":[
+            "",
+            ""
+        ],
+        "address":"127.0.0.1",
+        "port":8080,
+        "enable_tag_override": false,
+        "check":{
+            "deregisterCriticalServiceAfter":"90m",
+			"http":"http://127.0.0.1:8080/",
+            "interval":"10s"
+        }
+    }
+}

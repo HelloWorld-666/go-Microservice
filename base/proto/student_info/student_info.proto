@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+service StudentService {
+	rpc SetStudentInfo(SetStudentInfoReq) returns (SetStudentInfoRsp) {}
+	rpc GetStudentInfo(GetStudentInfoReq) returns (GetStudentInfoRsp) {}
+}
+
+message SetStudentInfoReq {
+	string name = 1;
+	string age = 2;
+	string sex = 3;
+	string mathScore = 4;
+}
+
+message SetStudentInfoRsp {
+	string name = 1;
+	string age = 2;
+	string sex = 3;
+	string mathScore = 4;
+}
+
+message GetStudentInfoReq {
+}
+
+message GetStudentInfoRsp {
+	string name = 1;
+	string age = 2;
+	string sex = 3;
+	string mathScore = 4;
+}
+

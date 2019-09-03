@@ -1,0 +1,9 @@
+{
+  "check": {
+    "id": "api",
+    "name": "健康检查：如下url是检查所有在8080端口上运行的服务是否健康？",
+    "http": "http://localhost:8080",
+    "interval": "10s",
+    "timeout": "1s"
+  }
+}
