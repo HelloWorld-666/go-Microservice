@@ -1,11 +1,12 @@
 /*
 Micro是一个简化分布式开发的微服务生态系统
- 1.consul  : read-config、server-finding（除了基础和路由服务，还额外需要启动consul服务器）
- 2.grpc  : router <-> base通过http/2协议通信，通过protobuf和json进行编解码
- 3.iris  : router
- 4.xorm  : base（需要连接Mysql数据库）
- 5.seelog  : logger
- 6.包管理工具：govendor
+ 1.consul : read-config、server-finding（除了基础和路由服务，还额外需要启动consul服务器）
+ 2.grpc   : router <-> base通过http/2协议通信，通过protobuf和json进行编解码
+ 3.iris   : router
+ 4.xorm   : base（需要连接Mysql数据库）
+ 5.seelog : logger
+ 6.mysql  ： 数据库（部署在腾讯云上，创建student表的.sql文件在当前目录下）
+ 7.包管理工具：govendor
 
  
  启动服务步骤：
