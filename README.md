@@ -54,22 +54,24 @@ Go Micro是可插拔的微服务开发框架。
 consul日志相关配置：    
 创建consul web ui上面的配置文件（config目录下的log_configuration配置）：config/log_configuration   
 
-{  
-    "log": {  
-	  "isDevelopmentEnv":"1",  
-	  "format":"[%Date(2006-01-02 15:04:05.000)] [%LEVEL] [%RelFile:%Line] %Msg%n",  
-	  "infoFileName":"./logs/info/info",  
-	  "debugFileName":"./logs/debug/debug",  
-	  "errorFileName":"./logs/error/error",  
-	  "criticalFileName":"./logs/critical/critical",  
-	  "saveOldInfoLogPath":"./logs/info/",  
-	  "saveOldDebugLogPath":"./logs/debug/",  
-	  "saveOldErrorLogPath":"./logs/error/",  
-	  "saveOldCriticalLogPath":"./logs/critical/",  
-	  "timePattern":"20060102_15.log",  
-	  "maxRolls":720  
+```
+	{  
+	  "log": {  
+		  "isDevelopmentEnv":"1",  
+		  "format":"[%Date(2006-01-02 15:04:05.000)] [%LEVEL] [%RelFile:%Line] %Msg%n",  
+		  "infoFileName":"./logs/info/info",  
+		  "debugFileName":"./logs/debug/debug",  
+		  "errorFileName":"./logs/error/error",  
+		  "criticalFileName":"./logs/critical/critical",  
+		  "saveOldInfoLogPath":"./logs/info/",  
+		  "saveOldDebugLogPath":"./logs/debug/",  
+		  "saveOldErrorLogPath":"./logs/error/",  
+		  "saveOldCriticalLogPath":"./logs/critical/",  
+		  "timePattern":"20060102_15.log",  
+		  "maxRolls":720  
+		}  
 	}  
-}
+```
 
 
 报错：有时由于重新启动时创建的服务节点数过多，导致常常访问接口报internal server错误（负载均衡，将请求转向其他错误服务地址）：  
