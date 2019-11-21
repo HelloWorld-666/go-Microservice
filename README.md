@@ -13,7 +13,7 @@ Go Micro是可插拔的微服务开发框架。
  
  **启动服务步骤：**  
  1.分别运行router和base下的run.bat脚本（运行路由、基础服务）  
-	因为github限制不能上传超过100M的文件，所以windows上用的consul.exe无法上传，继而压缩，使用时需要解压到压缩文件所在目录下  
+ &emsp因为github限制不能上传超过100M的文件，所以windows上用的consul.exe无法上传，继而压缩，使用时需要解压到压缩文件所在目录下  
  2.运行common/consul目录下的run.bat脚本	（运行consul服务）  
  3.Postman请求"http://127.0.0.1:8080/v1/student/set_student_info"  
  
