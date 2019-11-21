@@ -113,6 +113,7 @@ func InitLogger() {
 // 	log.ReplaceLogger(mainlog) //替换mainlog的配置文件
 // }
 
+// 加载位于consul上的配置文件到结构体对象中
 func LoadLogCfg(conf config.Config) {
 	err := conf.Get("config", common.GOODACDINING_LOG_CONFIGURATION).Scan(logConfig) // consul->key_value目录：config/log_configuration
 	if err != nil {
@@ -120,6 +121,7 @@ func LoadLogCfg(conf config.Config) {
 		return
 	}
 
+	// // 动态读取consul上的配置文件，暂时有问题，无法热加载
 	// watcher, err := conf.Watch("config", "log_configuration")
 	// if err != nil {
 	// 	log.Error(err)
