@@ -8,7 +8,7 @@ Go Micro是可插拔的微服务开发框架。
  4.xorm   : base（需要连接Mysql数据库）  
  5.seelog : logger  
  6.mysql  ：数据库（部署在腾讯云上，创建student表的.sql文件在当前目录下）  
- 7.包管理工具：govendor  
+ 7.govendor : 包管理工具
 
  
  **启动服务步骤：**  
