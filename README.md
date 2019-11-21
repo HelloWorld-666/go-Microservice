@@ -18,8 +18,8 @@ Go Micro是可插拔的微服务开发框架。
  3.Postman请求"http://127.0.0.1:8080/v1/student/set_student_info"，
    Body参数如下：
 	{
-		"name": "pmy",
-		"age": "12",
+		"name": "pmy",  
+		"age": "12",  
 		"sex": "male",
 		"mathScore": "199"
 	}
