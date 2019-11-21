@@ -52,8 +52,8 @@ Go Micro是可插拔的微服务开发框架。
 	
 	
 	
-**附录：  **
-consul日志相关配置：  
+**附录：**  
+consul日志相关配置：    
 创建consul web ui上面的配置文件（config目录下的log_configuration配置）：config/log_configuration     
 
 {
