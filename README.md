@@ -47,8 +47,7 @@ Go Micro是可插拔的微服务开发框架。
 	更多见：https://www.cnblogs.com/sunsky303/p/9209024.html  
 	
 	注：连续两个冒号::是命令行中的注释符  
-	
-	
+  
 **附录：**  
 consul日志相关配置：    
 创建consul web ui上面的配置文件（config目录下的log_configuration配置）：config/log_configuration     
