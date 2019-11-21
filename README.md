@@ -55,7 +55,7 @@ consul日志相关配置：
 创建consul web ui上面的配置文件（config目录下的log_configuration配置）：config/log_configuration   
 
 {  
-	"log": {  
+    "log": {  
 	  "isDevelopmentEnv":"1",  
 	  "format":"[%Date(2006-01-02 15:04:05.000)] [%LEVEL] [%RelFile:%Line] %Msg%n",  
 	  "infoFileName":"./logs/info/info",  
